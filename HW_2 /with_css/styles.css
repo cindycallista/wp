@@ -1,0 +1,240 @@
+select:required:invalid {
+    color: gray;
+}
+
+option[value=""][disabled] {
+    display: none;
+}
+
+option {
+    color: black;
+}
+
+.formactive {
+    display: block;
+}
+
+.formhidden {
+    display: none;
+}
+
+.body {
+    background-color: rgb(230, 230, 230);
+}
+
+.container {
+    text-align: left;
+    background-color: #ffffff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid #ffffff;
+    padding: 20px;
+    border-radius: 7px;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 80px;
+    transition: .5s;
+}
+
+.mode {
+    width: 235px;
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #eeeeee;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.toggle {
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    position: relative;
+    font-weight: bold;
+}
+
+.but {
+    transition: .5s;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #87b7ff, #fec0ed);
+    border-radius: 30px;
+}
+
+#loginbutton.active {
+    border-bottom-left-radius: 0;
+}
+
+#registerbutton.active {
+    border-bottom-right-radius: 0;
+}
+
+/*loginpage*/
+
+#loginpage {
+    width: 300px;
+    margin: 0 auto;
+}
+
+#loginpage input[type="text"],
+#loginpage input[type="password"],
+#loginpage input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#loginpage input[type="submit"] {
+    background-color: #87b7ff;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+}
+
+#loginpage input[type="submit"]:hover {
+    background-color: #749edc;
+}
+
+/*registerpage*/
+#registerpage input[type="text"],
+#registerpage input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.input2 {
+    margin-left: 40px;
+    width: 200px;
+}
+
+.gender-opt {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.gender label {
+    margin-right: 50px;
+    margin-bottom: 5px;
+}
+
+.country-code {
+    display: flex;
+}
+
+.country select {
+    width: 170px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.col {
+    display: flex;
+}
+
+.country,
+.code {
+    display: inline-block;
+}
+
+.code {
+    margin-left: 40px;
+}
+
+#registerpage input[type="submit"],
+.nextstep {
+    background-color: #fec0ed;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+#registerpage input[type="submit"]:hover,
+.nextstep:hover,
+.prevstep:hover {
+    background-color: #e19ccf;
+}
+
+#step2 input[type="email"],
+#step2 input[type="password"],
+#step2 input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#step2 input[type="submit"] {
+    background-color: #87b7ff;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+}
+
+#step2 input[type="submit"]:hover {
+    background-color: #749edc;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+}
+
+.prevstep {
+    background-color: #fec0ed;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#stepCircles {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.stepCircle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #b4b1b1;
+    display: inline-block;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.stepCircle.active {
+    background-color: #383838;
+}
