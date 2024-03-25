@@ -1,0 +1,209 @@
+body {
+    background-color: rgb(29, 29, 29);
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.contacts,
+.email,
+.location {
+    display: flex;
+}
+
+.email,
+.location {
+    margin-top: -30px;
+}
+
+.box {
+    color: rgb(230, 230, 230);
+    background-color: #323232;
+    border: 1px solid #323232;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 7px;
+    width: 300px;
+    height: 600px;
+}
+
+.boxtwo {
+    color: rgb(230, 230, 230);
+    background-color: #323232;
+    border: 1px solid #323232;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 7px;
+    width: 900px;
+    height: 600px;
+    margin-left: 55px;
+    /* Adjusted margin-left to 55px */
+}
+
+.profilebox {
+    background-color: #464646;
+    border: 1px solid #464646;
+    padding: 20px;
+    border-radius: 20px;
+    width: 215px;
+    height: 150px;
+    margin: 20px;
+
+}
+
+.name {
+    margin-left: 30px;
+    line-height: 1;
+    padding-top: 2px;
+}
+
+.phonebox,
+.mailbox,
+.locbox {
+    background-color: rgb(29, 29, 29);
+    border: 1px solid rgb(29, 29, 29);
+    padding: 5px;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonebox img,
+.mailbox img,
+.locbox img {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+}
+
+.profilebox img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    margin: auto;
+    margin-left: 30px;
+}
+
+.number,
+.mail,
+.loctext {
+    margin-top: 15px;
+}
+
+hr.short {
+    width: 300px;
+    border: 20px;
+    border-top: 5px solid rgb(246, 174, 194);
+    border-radius: 20px;
+    /* Set the border on the top side */
+    margin: 5px 0;
+}
+
+.about p {
+    line-height: 2;
+}
+
+.top,
+.bottom {
+    display: flex;
+}
+
+.onebox,
+.twobox {
+    background-color: #464646;
+    border: 1px solid #464646;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.onetext,
+.twotext,
+.threetext,
+.fourtext {
+    margin-left: 15px;
+}
+
+.hobbyone,
+.hobbytwo,
+.hobbythree,
+.hobbyfour {
+    display: flex;
+}
+
+.threebox,
+.fourbox {
+    background-color: #464646;
+    border: 1px solid #464646;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    margin: 20px;
+    margin-top: 10px;
+    display: flex;
+}
+
+.btn {
+    background-color: rgb(246, 174, 194);
+    color: rgb(52, 51, 51);
+    border: 1px solid rgb(246, 174, 194);
+    border-radius: 25px;
+    width: 200px;
+    height: 40px;
+    margin-left: 45px;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #d889af;
+}
+
+.btn a {
+    color: rgb(53, 52, 52);
+    text-decoration: none;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.btn:hover a {
+    color: white;
+}
+
+.topper {
+    display: flex;
+}
+
+.nav {
+    background-color: #464646;
+    border: 1px solid #464646;
+    padding: 20px;
+    border-radius: 7px;
+    width: 400px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 58px;
+    margin-right: 140px;
+}
+
+.nav p {
+    margin-top: -5px;
+    text-align: center;
+}
