@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(231, 163, 191);
+            position: relative;
+            left: 0;
+            transition: left 0.3s ease-in-out; 
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="move()">Click</button>
+    <script>
+       function move(){
+            var button = document.getElementById("btn");
+            var currentLeft = parseFloat(window.getComputedStyle(button).left);
+            var newLeft = currentLeft + 10; 
+            button.style.left = newLeft + "px";
+       } 
+    </script>
+</body>
+</html>

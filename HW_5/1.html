@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn {
+            width: 100px;
+            height: 50px;
+            background-color: rgb(231, 163, 191);
+        }
+    </style>
+</head>
+<body>
+    <button id="btn" onclick="expand()">Click</button>
+    <script>
+       function expand(){
+            var button = document.getElementById("btn");
+            var width = button.offsetWidth;
+            var height = button.offsetHeight;
+            var newWidth = width + 10;
+            var newHeight = height + 10;
+            btn.style.width = newWidth + "px";
+            btn.style.height = newHeight + "px"; 
+       } 
+    </script>
+</body>
+</html>
