@@ -1,9 +1,9 @@
 # 專案：點餐系統
 
+網站連結 : https://cindycallista.github.io/wp/MIDTERM/index.html
 >作者 : 資工一 楊莉思 111210555
 
 ## 影片演示
-
 觀看專案演示影片[這裡](https://www.youtube.com/watch?v=KgYL4_ZysAE)。建議以1.75倍速觀看。
 
 ## 網站功能
