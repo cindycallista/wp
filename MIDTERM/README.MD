@@ -1,33 +1,32 @@
-<h2> 介紹影片 : https://www.youtube.com/watch?v=KgYL4_ZysAE 
-(建議於1.75x速度看)
+# 專案：點餐系統
 
-會員登入
-username = member
-password = member
+## 影片演示
 
-網站功能 :
-- item categorization
-- customizes item
-- add items to cart (with customization details)
-- member login receives free delivery
-- payment page
-- booking table
-- comment/contact us section
+觀看專案演示影片[這裡](https://www.youtube.com/watch?v=KgYL4_ZysAE)。建議以1.75倍速觀看。
 
-圖片來源 : 
-- freepik.com 
-- icons8.com
-- canva.com
+## 網站功能
+- **商品分類**：為便於瀏覽進行商品分類。
+- **客製化**：允許使用者個性化訂單。
+- **購物車管理**：添加帶有客製化細節的商品到購物車。
+- **免費配送**：會員登入後享受免費配送服務。
+- **支付**：整合安全的支付頁面。
+- **訂位功能**：允許使用者預訂餐桌。
+- **意見反饋**：包含用戶意見反饋/聯繫我們區域。
 
-This project is mainly done by myself with references.
-Inspired by 早到晚到點餐系統~
+## 圖片來源
+使用的圖片來源於：
+- [Freepik](https://www.freepik.com)
+- [Icons8](https://icons8.com)
+- [Canva](https://www.canva.com)
 
-參考資料 : 
-按鈕功能有問題用過copilot debug
-購物車功能大部分參考以下資料, 看得懂後自己寫代碼
-- https://www.w3schools.com/howto/howto_js_popup.asp
-- https://stackoverflow.com/questions/77217693/how-to-create-an-add-to-cart-button-and-update-the-product-to-a-table-correspo
-- https://stackoverflow.com/questions/69523898/how-does-one-add-a-product-item-to-a-shopping-cart-and-how-would-one-remove-it-f
-- https://stackoverflow.com/questions/13418100/how-to-show-and-update-total-price-with-javascript
-- https://www.youtube.com/watch?v=sf_ac-dYh3w
-其他的都是原創
+## 參考資料
+- 按鈕功能使用Copilot進行調試。
+- 購物車功能參考並改編自以下資料：
+  - [W3Schools - 如何創建彈出窗口](https://www.w3schools.com/howto/howto_js_popup.asp)
+  - [Stack Overflow - 添加商品到購物車](https://stackoverflow.com/questions/77217693/how-to-create-an-add-to-cart-button-and-update-the-product-to-a-table-correspo)
+  - [Stack Overflow - 更新總價格](https://stackoverflow.com/questions/13418100/how-to-show-and-update-total-price-with-javascript)
+  - [YouTube 教程 - 購物車實現](https://www.youtube.com/watch?v=sf_ac-dYh3w)
+
+## 作者備註
+
+本專案主要由我自行開發，參考上述資料和靈感。旨在提供一個高效且用戶友好的訂購體驗。
