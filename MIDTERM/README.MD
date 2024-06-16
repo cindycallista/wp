@@ -11,7 +11,7 @@
 - **客製化**：允許使用者個性化訂單。
 - **購物車管理**：添加帶有客製化細節的商品到購物車。
 - **免費配送**：會員登入後享受免費配送服務。
-- **支付**：整合安全的支付頁面。
+- **支付** : 付款表單,  付款類型。
 - **訂位功能**：允許使用者預訂餐桌。
 - **意見反饋**：包含用戶意見反饋/聯繫我們區域。
 
@@ -28,7 +28,7 @@
   - [Stack Overflow - 添加商品到購物車](https://stackoverflow.com/questions/77217693/how-to-create-an-add-to-cart-button-and-update-the-product-to-a-table-correspo)
   - [Stack Overflow - 更新總價格](https://stackoverflow.com/questions/13418100/how-to-show-and-update-total-price-with-javascript)
   - [YouTube 教程 - 購物車實現](https://www.youtube.com/watch?v=sf_ac-dYh3w)
+其他的都是原創
 
 ## 作者備註
-
-本專案主要由我自行開發，參考上述資料和靈感。旨在提供一個高效且用戶友好的訂購體驗。
+本專案主要由我自行開發，參考以上資料和靈感。
