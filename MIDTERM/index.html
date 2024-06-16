@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!---nav-->
+    <header>
+        <div class="logo">
+            <img src="css/logo.png" width="60px" height="60px">
+            <h3>Cakeify.</h3>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Shop</a></li>
+                <li><a href="#testimonial">Review</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <a href="javascript:void(0)" onclick="openCart()"><img src="css/cart.png"></a>
+            <a href="javascript:void(0)" onclick="openLoginPopup()"><img id="user-icon" src="css/user.png"></a>
+            <div id="member-status" style="display: inline;">Guest</div>
+        </div>
+    </header>
+    
+
+    <!---Home-->
+    <section class="Home" id="home">
+        <div class="txt">
+            <h1>Where Sweet Dreams Come True</h1>
+            <p>We are Cakeify, your go-to patisserie shop for the most delicious and beautiful cakes. We use only the finest ingredients to create cakes that not only look stunning but taste amazing too. Our mission is to make every celebration sweeter with our unique creations.</p>
+            <div class="btn">
+                <button id="home-button">Get free delivery as a member!</button>
+            </div>
+        </div>
+        
+        <div class="img">
+            <img src="css/cake-home.png" height="500px" width="400px">
+        </div>
+    </section>
+
+    <!---booking-->
+    <div class="booking-container">
+        <div class="texts">
+        <label for="date">Book a Table:</label>
+        <input type="date" id="date" name="date" required>
+        <select id="time" name="time" required>
+            <option value="" disabled selected>Select Time</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="12:30">12:30 PM</option>
+            <option value="1:00">1:00 PM</option>
+        </select>
+        <select id="people" name="people" required>
+            <option value="" disabled selected>Select People</option>
+            <option value="1">1 Person</option>
+            <option value="2">2 People</option>
+            <option value="3">3 People</option>
+            <option value="4">4 People</option>
+        </select>
+        <button type="submit" id="add">Book now</button>
+    </div>
+    </div>
+
+    <div id="booking-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeBookingPopup()">&times;</span>
+            <form id="booking-form">
+                <label for="booking-name">Name:</label>
+                <input type="text" id="booking-name" name="booking-name" required>
+                <label for="booking-phone">Phone Number:</label>
+                <input type="tel" id="booking-phone" name="booking-phone" required>
+                <button type="submit" id="add">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!--menu-->
+    <Section class="menu" id="menu">
+    <div class="specific">
+        <h1>Choose & Enjoy</h1>
+        <p>Inspire by recipe and creations of the world's best chefs</p>
+        <div class="categories">
+            <button class="category" id="cakes-category" onclick="filterMenu('cakes')">Cakes</button>
+            <button class="category" id="cookies-category" onclick="filterMenu('cookies')">Cookies</button>
+            <button class="category" id="drinks-category" onclick="filterMenu('drinks')">Drinks</button>
+        </div>
+         <!--cakes-->
+        <div class="grid">
+            <div class="card">
+                <img src="css/cake1.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Black Forest</h3>
+                    <button class="customize" onclick="openPopup('cake', 'chocolate cake')">Customize</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="css/strawcake.png" width="150px" height="auto" margin-top="0px" margin-bottom="20px">
+                <div class="card-content">
+                    <h3>Strawberry</h3>
+                    <button class="customize" onclick="openPopup('cake', 'Strawberry')">Customize</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="css/fruitcake.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Fruit Loops</h3>
+                    <button class="customize" onclick="openPopup('cake','Fruit Loops')">Customize</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="css/caramel.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Choco Caramel</h3>
+                    <button class="customize" onclick="openPopup('cake','Choco Caramel')">Customize</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="css/blue.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Blueberry</h3>
+                    <button class="customize" onclick="openPopup('cake','Blueberry')">Customize</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cookies -->
+        <div class="grid-cookie">
+            <div class="card cookie-item" style="display: none;">
+                <img src="css/mac.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Macaroon</h3>
+                    <button class="customize" onclick="openPopup('cookie','Macaroon')">Customize</button>
+                </div>
+            </div>
+            <div class="card cookie-item" style="display: none;">
+                <img src="css/donut.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Donut</h3>
+                    <button class="customize" onclick="openPopup('cookie','Donut')">Customize</button>
+                </div>
+            </div>
+            <div class="card cookie-item" style="display: none;">
+                <img src="css/cup.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Cupcake</h3>
+                    <button class="customize" onclick="openPopup('cookie','Cupcake')">Customize</button>
+                </div>
+            </div>
+            <div class="card cookie-item" style="display: none;">
+                <img src="css/cookie.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Cookie</h3>
+                    <button class="customize" onclick="openPopup('cookie','Cookie')">Customize</button>
+                </div>
+            </div>
+            <div class="card cookie-item" style="display: none;">
+                <img src="css/pudding.png" width="150px" height="auto">
+                <div class="card-content">
+                    <h3>Pudding</h3>
+                    <button class="customize" onclick="openPopup('cookie','Pudding')">Customize</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="grid-drink">
+        <div class="card drink-item" style="display: none;">
+            <img src="css/drink1.png" width="150px" height="auto">
+            <div class="card-content">
+                <h3>Strawberry Juice</h3>
+                <button class="customize" onclick="openPopup('drink','Strawberry Juice')">Customize</button>
+            </div>
+        </div>
+        <div class="card drink-item" style="display: none;">
+            <img src="css/drink2.png" width="150px" height="auto">
+            <div class="card-content">
+                <h3>Banana Juice</h3>
+                <button class="customize" onclick="openPopup('drink','Banana Juice')">Customize</button>
+            </div>
+        </div>
+        <div class="card drink-item" style="display: none;">
+            <img src="css/drink3.png" width="150px" height="auto">
+            <div class="card-content">
+                <h3>Blueberry Juice</h3>
+                <button class="customize" onclick="openPopup('drink','Blueberry Juice')">Customize</button>
+            </div>
+        </div>
+        <div class="card drink-item" style="display: none;">
+            <img src="css/drink4.png" width="150px" height="auto">
+            <div class="card-content">
+                <h3>Pear Juice</h3>
+                <button class="customize" onclick="openPopup('drink','Pear Juice')">Customize</button>
+            </div>
+        </div>
+        <div class="card drink-item" style="display: none;">
+            <img src="css/drink5.png" width="150px" height="auto">
+            <div class="card-content">
+                <h3>Orange Juice</h3>
+                <button class="customize" onclick="openPopup('drink','Orange Juice')">Customize</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="view-more">More variants coming soon!</button>
+    </div>
+    </div>
+    </Section>
+
+    <!--customization cake-->
+    <div id="cake-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <form id="cake-customization-form">
+                <label for="cake-size">Size:</label>
+                <select name="cake-size" id="cake-size">
+                    <option value="10cm" data-price="250">10 cm - $250</option>
+                    <option value="15cm" data-price="400">15 cm - $400</option>
+                    <option value="20cm" data-price="600">20 cm - $600</option>
+                </select>
+                <label for="sugar-level">Sugar Level:</label>
+                <select name="sugar-level" id="sugar-level">
+                    <option value="Regular">Regular</option>
+                    <option value="Extra Sugar">Extra Sugar</option>
+                    <option value="Low">Low</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" name="quantity" id="quantity" value="1" min="1">
+                <button type="submit" id="add">Add to cart</button>
+            </form>
+        </div>
+    </div>
+    
+    <!--customization cookies -->
+    <div id="cookie-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <form id="cookie-customization-form">
+                <label for="cookie-box-size">Cookie Box Size:</label>
+                <select id="cookie-box-size" name="cookie-box-size">
+                    <option value="Small box (6pcs)" data-price="150.00">Small Box (6pcs) - $150.00</option>
+                    <option value="Medium box (8pcs)" data-price="180.00">Medium Box (8pcs)- $180.00</option>
+                    <option value="Large box (12pcs)" data-price="220.00">Large Box (12pcs) - $220.00</option>
+                </select>
+                <label for="cookie-sugar-level">Sugar Level:</label>
+                <select id="cookie-sugar-level" name="cookie-sugar-level">
+                    <option value="Regular">Regular</option>
+                    <option value="Extra Sugar">Extra Sugar</option>
+                    <option value="Low">Low</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button type="submit" id="add">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- customization drinks -->
+    <div id="drink-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <form id="drink-customization-form">
+                <label for="drink-size">Drink Size:</label>
+                <select id="drink-size" name="drink-size">
+                    <option value="Small" data-price="30.00">Small - $30.00</option>
+                    <option value="Medium" data-price="35.00">Medium - $35.00</option>
+                    <option value="Large" data-price="45.00">Large - $45.00</option>
+                </select>
+                <label for="drink-sugar-level">Sugar Level:</label>
+                <select id="drink-sugar-level" name="drink-sugar-level">
+                    <option value="Low">Low</option>
+                    <option value="Normal">Normal</option>
+                    <option value="High">High</option>
+                </select>
+                <label for="drink-ice-level">Ice Level:</label>
+                <select id="drink-ice-level" name="drink-ice-level">
+                    <option value="No Ice">No Ice</option>
+                    <option value="Less Ice">Less Ice</option>
+                    <option value="Normal">Normal</option>
+                    <option value="Extra Ice">Extra Ice</option>
+                </select>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1">
+                <button type="submit" id="add">Add to Cart</button>
+            </form>
+        </div>
+    </div>
+
+    <!--cart-->
+    <div id="cart-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-cart">&times;</span>
+            <h2 class="cart-title">Your Cart</h2>
+            <ul id="cart-items"></ul>
+            <p class="total">Total: $<span id="total-price">0.00</span></p>
+            <button id="checkout-button">Checkout</button>
+        </div>
+    </div>
+
+     <!-- payment-->
+     <div id="payment-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-payment-popup">&times;</span>
+            <h2 class="cart-title">Payment</h2>
+            <div class="form-list">
+            <label for="customer-name">Name:</label><br>
+            <input type="text" id="customer-name" name="customer-name"><br>
+            <label for="customer-address">Address:</label><br>
+            <input type="text" id="customer-address" name="customer-address"><br>
+            <label for="delivery-date">Delivery Date and Time:</label><br>
+            <input type="datetime-local" id="delivery-date" name="delivery-date" required><br>
+            <label for="payment-type">Payment Type:</label><br>
+            <select id="payment-type" name="payment-type">
+                <option value="cash">Cash on Delivery</option>
+                <option value="card">Card</option>
+            </select>
+            <div id="card-details">
+                <label for="card-number">Card Number:</label>
+                <input type="text" id="card-number" name="card-number">
+            </div>
+        </div>
+            <div class="summary">
+                <div>Total Price: $<span id="final-total-price">0.00</span></div>
+                <div>Delivery Fee: $<span id="delivery-fee">0.00</span></div>
+                <div>Grand Total: $<span id="grand-total">0.00</span></div>
+            </div>
+            <button id="confirm-payment">Confirm Payment</button>
+        </div>
+    </div>
+
+    <!-- login -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" id="close-login-popup">&times;</span>
+            <h2 class="cart-title">Login</h2>
+            <div class="login-content">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <button id="login-button" onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <!--review-->
+    <section class="testimonial" id="testimonial">
+        <div class="container">
+            <h2 class="title">what our customers say</h2>
+        </div>
+        <div class="t-content">
+            <div class="t-items">
+                <div class="info">
+                    <img src="css/reviewer.png" alt="img">
+                    <div class="textbox">
+                         <h3 class="name">Hanni Pham</h3>
+                    </div>
+                </div>
+                <p>The design was stunning and the cake tasted heavenly. The sponge was light and fluffy, and the buttercream was so smooth and delicious. Definitely be coming back for future events.</p>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <!--t2-->
+            <div class="t-items">
+                <div class="info">
+                    <img src="css/reviewer.png" alt="img">
+                    <div class="textbox">
+                         <h3 class="name">Christian Yu</h3>
+                    </div>
+                </div>
+                <p>The flavors were unique and the presentation was beautiful. My favorite was the black forest. The staff were also super friendly and helpful. This place is now my go-to for all things sweet. Highly recommend!</p>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <!--t3-->
+            <div class="t-items">
+                <div class="info">
+                    <img src="css/reviewer.png" alt="img">
+                    <div class="textbox">
+                         <h3 class="name">Taylor Swift</h3>
+                    </div>
+                </div>
+                <p>Ordered a variety of pastries for a family gathering, and every single one was a winner. The macaroons were tasty, and the juices were fresh and delicious. The quality and taste of everything were outstanding. </p>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm" action="javascript:void(0);" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- copyright -->
+    <footer id="copyright">
+        <div class="container">
+            <p>&copy; 2024 Cakeify. All rights reserved.</p>
+            <p>Website designed by <a href="https://github.com/cindycallista">Cindy</a>.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
