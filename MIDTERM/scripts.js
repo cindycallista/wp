@@ -251,12 +251,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();  // Prevent the default form submission
-
-    // Show the thank you message
+    event.preventDefault(); 
     alert('Thank you for your feedback!');
-
-    // Clear the form
     document.getElementById('contactForm').reset();
 });
 
