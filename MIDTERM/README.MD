@@ -29,7 +29,6 @@
   - [Stack Overflow - 更新總價格](https://stackoverflow.com/questions/13418100/how-to-show-and-update-total-price-with-javascript)
   - [YouTube 教程 - 購物車實現](https://www.youtube.com/watch?v=sf_ac-dYh3w)
 <br>
-其他的都是原創
 
 ## 作者備註
 本專案主要由我自行開發，參考以上資料和靈感。
