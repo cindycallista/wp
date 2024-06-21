@@ -27,6 +27,7 @@
 ---
 ### 作業五 DOM的JavaScript操縱練習
     第三題參考 https://css-tricks.com/snippets/javascript/random-hex-color/ 隨機顏色
+
     #### 變大
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_5/1.html)
  * [網頁](https://cindycallista.github.io/wp/HW_5/1.html)
