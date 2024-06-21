@@ -18,7 +18,7 @@
   * [原始碼]( https://github.com/cindycallista/wp/blob/master/HW_2/index.html)
 ---
 ### 作業三 JavaScript基本練習
-    參考 [W3schools](https://www.w3schools.com/js/)
+    參考 https://www.w3schools.com/js/
   * [原始碼](https://github.com/cindycallista/wp/tree/master/HW_3)
 ---
 ### 作業四 JavaScript練習2
@@ -27,23 +27,22 @@
 ---
 ### 作業五 DOM的JavaScript操縱練習
     第三題參考 https://css-tricks.com/snippets/javascript/random-hex-color/ 隨機顏色
-    *
-    #### 變大
+    * 變大
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_5/1.html)
  * [網頁](https://cindycallista.github.io/wp/HW_5/1.html)
-    #### 右移
+   * 右移
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_5/2.html)
  * [網頁](https://cindycallista.github.io/wp/HW_5/2.html)
-    #### 隨機移動
+    * 隨機移動
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_5/3.html)
  * [網頁](https://cindycallista.github.io/wp/HW_5/3.html)
 ---
 ### 作業六 側欄 -- CSS Transition 與 JavaScript
     使用copilot, 文字動畫部分參考 https://medium.com/@eltocino/keyframe-animations-and-basic-transforms-in-css-59684a25ba24
-    #### css
+    * css
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_6/css/index.html)
  * [網頁](https://cindycallista.github.io/wp/HW_6/css/index.html)
-    #### js
+    * js
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_6/js/index.html)
  * [網頁](https://cindycallista.github.io/wp/HW_6/js/index.html)
 ---
