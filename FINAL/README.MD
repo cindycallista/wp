@@ -1,11 +1,11 @@
 # 期末作業
 
-### 作業一 自我介紹網頁
+### 作業1 自我介紹網頁
     全部原創
    * [網頁](https://cindycallista.github.io/wp/HW_1/index.html)
    * [原始碼](https://github.com/cindycallista/wp/tree/master/HW_1)
 ---
-### 作業二 註冊表單
+### 作業2 註冊表單
     connect php/mySQL 參考 : 
     * https://www.w3schools.com/php/php_mysql_connect.asp 
     * https://www.youtube.com/watch?v=2HVKizgcfjo
@@ -17,15 +17,15 @@
   * [網頁](https://cindycallista.github.io/wp/HW_2/index.html)
   * [原始碼]( https://github.com/cindycallista/wp/blob/master/HW_2/index.html)
 ---
-### 作業三 JavaScript基本練習
+### 作業3 JavaScript基本練習
     參考 https://www.w3schools.com/js/
   * [原始碼](https://github.com/cindycallista/wp/tree/master/HW_3)
 ---
-### 作業四 JavaScript練習2
+### 作業4 JavaScript練習2
     第八題參考解答, 梯度下降法. 有使用copilot debug
   * [原始碼](https://github.com/cindycallista/wp/tree/master/HW_4)
 ---
-### 作業五 DOM的JavaScript操縱練習
+### 作業5 DOM的JavaScript操縱練習
     第三題參考 https://css-tricks.com/snippets/javascript/random-hex-color/ 隨機顏色
 #### 變大
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_5/1.html)
@@ -37,7 +37,7 @@
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_5/3.html)
  * [網頁](https://cindycallista.github.io/wp/HW_5/3.html)
 ---
-### 作業六 側欄 -- CSS Transition 與 JavaScript
+### 作業6 側欄 -- CSS Transition 與 JavaScript
     使用copilot, 文字動畫部分參考 https://medium.com/@eltocino/keyframe-animations-and-basic-transforms-in-css-59684a25ba24
 #### css
  * [原始碼](https://github.com/cindycallista/wp/blob/master/HW_6/css/index.html)
